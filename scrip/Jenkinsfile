@@ -19,7 +19,7 @@ pipeline{
         }
         stage('plan'){
             steps{
-                sh 'terraform plan -state=statefile -no-color'
+                sh 'terraform plan -state=false -no-color'
             }
         }
     }
